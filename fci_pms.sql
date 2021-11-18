@@ -32,8 +32,8 @@ CREATE TABLE `corrections_reports` (
   `user_id` int(11) NOT NULL,
   `file_name` varchar(255) NOT NULL,
   `file_path` varchar(255) NOT NULL,
-  `created_at` date NOT NULL DEFAULT current_timestamp(),
-  `updated_at` date NOT NULL DEFAULT current_timestamp()
+  `created_at` date NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` date NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
