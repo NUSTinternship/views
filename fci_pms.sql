@@ -6,7 +6,6 @@
 -- Generation Time: Nov 15, 2021 at 01:59 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.3.27
-set @@session.explicit_defaults_for_timestamp=on;
 
 START TRANSACTION;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
