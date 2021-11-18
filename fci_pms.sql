@@ -77,8 +77,6 @@ CREATE TABLE `examiners_reports` (
 -- Dumping data for table `examiners_reports`
 --
 
-INSERT INTO `examiners_reports` (`id`, `user_id`, `file_name`, `file_path`, `created_at`, `updated_at`) VALUES
-(7, 120, 'Mr Gabriel Nhinda_1631007554_examinersReport.pdf', '/storage/examiners_reports/Mr Gabriel Nhinda_1631007554_examinersReport.pdf', '2021-09-07', '2021-09-07');
 
 -- --------------------------------------------------------
 
@@ -111,8 +109,6 @@ CREATE TABLE `fhdc` (
 -- Dumping data for table `fhdc`
 --
 
-INSERT INTO `fhdc` (`id`, `user_id`) VALUES
-(15, 119);
 
 -- --------------------------------------------------------
 
@@ -134,8 +130,6 @@ CREATE TABLE `final_proposals` (
 -- Dumping data for table `final_proposals`
 --
 
-INSERT INTO `final_proposals` (`id`, `user_id`, `file_name`, `file_path`, `supervisor_comments`, `created_at`, `updated_at`) VALUES
-(29, 120, 'Mr Gabriel Nhinda_1631006668_finalproposal.pdf', '/storage/final_proposals/Mr Gabriel Nhinda_1631006668_finalproposal.pdf', NULL, '2021-09-07 07:20:25', '2021-09-07 07:24:28');
 
 -- --------------------------------------------------------
 
@@ -156,8 +150,6 @@ CREATE TABLE `final_thesis` (
 -- Dumping data for table `final_thesis`
 --
 
-INSERT INTO `final_thesis` (`id`, `user_id`, `file_name`, `file_path`, `created_at`, `updated_at`) VALUES
-(14, 120, 'Mr Gabriel Nhinda_1631007315_finalthesis.pdf', '/storage/final_thesis/Mr Gabriel Nhinda_1631007315_finalthesis.pdf', '2021-09-07 07:33:31', '2021-09-07 07:35:15');
 
 -- --------------------------------------------------------
 
@@ -174,10 +166,7 @@ CREATE TABLE `hods` (
 -- Dumping data for table `hods`
 --
 
-INSERT INTO `hods` (`id`, `user_id`) VALUES
-(12, 123);
-
--- --------------------------------------------------------
+- --------------------------------------------------------
 
 --
 -- Table structure for table `intentions`
@@ -196,8 +185,6 @@ CREATE TABLE `intentions` (
 -- Dumping data for table `intentions`
 --
 
-INSERT INTO `intentions` (`id`, `user_id`, `file_name`, `file_path`, `created_at`, `updated_at`) VALUES
-(14, 120, 'Mr Gabriel Nhinda_1631007211_intention_to_submit.pdf', '/storage/intentions/Mr Gabriel Nhinda_1631007211_intention_to_submit.pdf', '2021-09-07 07:33:31', '2021-09-07 07:33:31');
 
 -- --------------------------------------------------------
 
@@ -343,8 +330,6 @@ CREATE TABLE `plagiarism_reports` (
 -- Dumping data for table `plagiarism_reports`
 --
 
-INSERT INTO `plagiarism_reports` (`id`, `user_id`, `file_name`, `file_path`, `created_at`, `updated_at`) VALUES
-(29, 120, 'Mr Gabriel Nhinda_1631006668_plagiarismreport.pdf', '/storage/plagiarism_reports/Mr Gabriel Nhinda_1631006668_plagiarismreport.pdf', '2021-09-07 07:20:25', '2021-09-07 07:24:28');
 
 -- --------------------------------------------------------
 
@@ -402,8 +387,6 @@ CREATE TABLE `proposal_status` (
 -- Dumping data for table `proposal_status`
 --
 
-INSERT INTO `proposal_status` (`id`, `student_id`, `supervisor_comments`, `hdc_comments`, `hod_comments`, `attempts`, `status`) VALUES
-(18, 120, 'APPROVED: Good Work!', 'APPROVED: Good!!', NULL, 2, 'HDC Approved');
 
 -- --------------------------------------------------------
 
@@ -424,8 +407,6 @@ CREATE TABLE `proposal_summaries` (
 -- Dumping data for table `proposal_summaries`
 --
 
-INSERT INTO `proposal_summaries` (`id`, `user_id`, `file_name`, `file_path`, `created_at`, `updated_at`) VALUES
-(31, 120, 'Mr Gabriel Nhinda_1631006668_proposalsummary.pdf', '/storage/proposal_summaries/Mr Gabriel Nhinda_1631006668_proposalsummary.pdf', '2021-09-07 07:20:25', '2021-09-07 07:24:28');
 
 -- --------------------------------------------------------
 
@@ -501,9 +482,6 @@ CREATE TABLE `students` (
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`id`, `user_id`, `program`, `progress`, `department`, `supervisor_id`, `co_supervisor_id`, `evaluator_id`, `co_evaluator_id`, `created_at`, `updated_at`) VALUES
-(17, 120, 'Masters', 'Examination', 'Computer Science', 34, NULL, 119, NULL, '2021-07-30 03:02:55', '2021-07-30 03:02:55'),
-(18, 121, 'PhD', 'Proposal', 'Informatics', NULL, NULL, NULL, NULL, '2021-07-30 03:03:02', '2021-07-30 03:03:02');
 
 -- --------------------------------------------------------
 
@@ -527,8 +505,6 @@ CREATE TABLE `supervisors` (
 -- Dumping data for table `supervisors`
 --
 
-INSERT INTO `supervisors` (`id`, `user_id`, `department`, `office`, `phone`, `workload`, `hod_id`, `created_at`, `updated_at`) VALUES
-(34, 122, 'Computer Science', 'Poly Heights', '+264619862356', NULL, NULL, '2021-07-30 03:03:49', '2021-07-30 03:03:49');
 
 -- --------------------------------------------------------
 
@@ -549,8 +525,6 @@ CREATE TABLE `thesis_abstracts` (
 -- Dumping data for table `thesis_abstracts`
 --
 
-INSERT INTO `thesis_abstracts` (`id`, `user_id`, `file_name`, `file_path`, `created_at`, `updated_at`) VALUES
-(14, 120, 'Mr Gabriel Nhinda_1631007315_thesisabstract.pdf', '/storage/thesis_abstracts/Mr Gabriel Nhinda_1631007315_thesisabstract.pdf', '2021-09-07 07:33:31', '2021-09-07 07:35:15');
 
 -- --------------------------------------------------------
 
@@ -572,8 +546,6 @@ CREATE TABLE `thesis_status` (
 -- Dumping data for table `thesis_status`
 --
 
-INSERT INTO `thesis_status` (`id`, `student_id`, `status`, `supervisor_comments`, `hod_comments`, `hdc_comments`, `attempts`) VALUES
-(10, 120, 'Examination Complete', 'APPROVED: Great Work!', 'APPROVED: Great Work!!', NULL, 2);
 
 -- --------------------------------------------------------
 
@@ -597,13 +569,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `user_type`, `remember_token`, `created_at`, `updated_at`) VALUES
-(6, 'Wynne Bowman', 'liviniwu@mailinator.com', NULL, '$2y$10$T/IBbhk4XWuoFMlyY2MFvOzIwyAoUc2HbluC94vMcaYzbRnJMJ2TO', 'Administrator', NULL, '2021-05-22 09:09:42', '2021-05-22 09:09:42'),
-(119, 'Prof. Fungai Bhunu Shava', 'fbshava@nust.na', NULL, '$2y$10$LJ1YqueBGH/OM1KyH8wPMuwwoHItKtrklQo8wf1wyyrrS7/poRopq', 'FHDC', NULL, '2021-07-30 03:02:45', '2021-07-30 03:02:45'),
-(120, 'Mr Gabriel Nhinda', 'gnhinda@nust.na', NULL, '$2y$10$G6GABTuIeelT7wMeBX43FeT96DKPnmXnnbrck43fU23ltXcHRWRLy', 'Student', NULL, '2021-07-30 03:02:55', '2021-07-30 03:02:55'),
-(121, 'Lionel Reid', 'rujigofe@mailinator.com', NULL, '$2y$10$14lS/ae9FyZPRjxwMFoZlOwmRB9avyMUW2v8YYl6DEhqAhV/Jr3Ha', 'Student', NULL, '2021-07-30 03:03:02', '2021-07-30 03:03:02'),
-(122, 'Dr Colin Stanley', 'cstanley@nust.na', NULL, '$2y$10$vKJalltDrH66dFPv6K.PrOzkj1EKFhQi4pk7sC3BxLoHuA3KulOce', 'Supervisor', NULL, '2021-07-30 03:03:49', '2021-07-30 03:03:49'),
-(123, 'Dr Hamunyela', 'slhamunyela@nust.na', NULL, '$2y$10$//rdEYKoTZsh9Q47GcssGu2LaNdPgTYf0.KsBRSZ2rXN8oAgxbMn2', 'HOD', NULL, '2021-07-30 03:04:01', '2021-07-30 03:04:01');
 
 --
 -- Indexes for dumped tables
